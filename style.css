@@ -7,13 +7,11 @@ body {
     
 }
 
-.logo-img {
-    display: flex;
-    width: 100px;
-    height: 80px;
-}
+
+/* NavBar Top Styling */
 
 header, .intro {
+    background-color: #F7F0EF;
     margin: auto;
     display: flex;
     width: 100%;
@@ -22,6 +20,13 @@ header, .intro {
     justify-content: space-around;
     gap: 15%;
 }
+
+.logo-img {
+    display: flex;
+    width: 100px;
+    height: 80px;
+}
+
 
 ul {
     display: flex;
@@ -32,6 +37,7 @@ ul {
 li {
     list-style: none;
     font-size: 16px;
+    font-style: bold;
 }
 
 li a {
@@ -50,10 +56,71 @@ li a:hover:not(.active) {
     text-decoration: underline;
 }
 
-button {
+
+/* Big Title Styling */
+
+.big-title {
+    display: flex;
+    align-self: auto;
+    align-items: center;
+    justify-content: right;
+    background-color: #F7F0EF;
+    flex-flow: column wrap;
+}
+
+.intro {
+    height: 90vh;
+    gap: 40px;
+
+}
+
+.intro-text {
+    margin-left: 15%;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1;
+}
+
+.button-one {
     background-color: palevioletred;
-    flex: auto;
-    
+    flex: 0 1 auto;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 2px;
+
+}
+
+.big-title-img {
+    flex:1;
+    height: 100%;
+    display:flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items:center;
+    margin-right: 15%;
+    overflow: hidden;
+}
+
+.featured {
+    flex-wrap: wrap;
+    padding: 64px;
+}
+
+.featured-cards {
+    display:flex;
+    justify-content: space-around;
+    gap:32px;
+    flex-flow: row wrap;
+}
+
+.card {
+    max-width: 350px;
+    color: #1f293700;
+    transition:ease-in .7s;
 }
 
 .featured-review {
